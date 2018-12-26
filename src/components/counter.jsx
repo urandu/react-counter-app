@@ -28,6 +28,7 @@ class Counter extends Component {
 
   handleIncrement = () => {
     console.log("Increment Clicked", this);
+    this.setState({ count: this.state.count + 1 });
   };
   renderTags() {
     if (this.state.tags.length === 0) return <p>There are no tags!</p>;
