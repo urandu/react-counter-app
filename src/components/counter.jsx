@@ -1,17 +1,23 @@
 import React, { Component } from "react";
 class Counter extends Component {
-  state = {
-    value: this.props.counter.value,
-    tags: []
-  };
-
   //   constructor() {
   //     super();
   //     this.handleIncrement = this.handleIncrement.bind(this);
   //   }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("prevProps", prevProps);
+    console.log("prevState", prevState);
+    if (prevProps.counter.value !== this.props.counter.value) {
+      // Ajax call and get new data from the server
+    }
+  }
+
+  componentWillUnmount() {
+    console.log("Counter - unmount");
+  }
 
   render() {
-    console.log("props", this.props);
+    console.log("Counter - rendered");
     return (
       <React.Fragment>
         {this.props.children}

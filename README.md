@@ -1,5 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Road Map
+
+```
+ - Props
+ - Raising and Handling Events
+ - Lifting the State
+ - Functional Components
+ - Lifecycle Hooks
+ - Pagination
+ - Searching
+ - Sorting
+ - HTTP
+ - Auth
+ - Deployment
+
+
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
